@@ -4,12 +4,6 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "removebuild": "rmdir /S /Q build",
-    "build:ui": "cd ../easykb && npm run build ",
-    "copybuild": "xcopy /e C:\\Users\\Miki\\Documents\\Koodi\\react_node\\easykb\\build C:\\Users\\Miki\\Documents\\Koodi\\react_node\\easykb_backend\\build",
-    "deploy": "git push azure master",
-    "build:all": "npm run removebuild && npm run build:ui && npm run copybuild",
-    "deploy:full": "npm run build:all && git add . && git commit -m changes :) && git push && npm run deploy",
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
